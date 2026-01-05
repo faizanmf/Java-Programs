@@ -18,5 +18,7 @@ public class PalindromString {
         {
             System.out.println("not Palindrom");
         }
+
+
     }
 }

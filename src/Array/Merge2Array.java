@@ -1,6 +1,7 @@
 package Array;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class Merge2Array {
     public static void main(String[] args) {
@@ -24,6 +25,16 @@ public class Merge2Array {
         }
 
         System.out.println(Arrays.toString(c));
+
+//        int[] a = {1, 3, 4, 5, 6};
+//        int[] b = {1, 2, 3, 7, 8, 9};
+//
+//        int[] c = IntStream
+//                .concat(Arrays.stream(a), Arrays.stream(b))
+//                .sorted()
+//                .toArray();
+//
+//        System.out.println(Arrays.toString(c));
 
     }
 }
