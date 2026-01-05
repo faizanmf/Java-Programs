@@ -1,6 +1,6 @@
 package String;
 
-public class ReplaceParticularword {
+public class ReverseParticularWord {
     public static void main(String[] args) {
 
         String a = "faizan the best";

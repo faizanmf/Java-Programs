@@ -29,6 +29,6 @@ public class CaseConversion {
             }
         }
 
-        System.out.println(sb1.toString());
+        System.out.println(sb1);
     }
 }

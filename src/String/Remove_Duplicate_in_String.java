@@ -1,6 +1,6 @@
 package String;
 
-public class Remove_Duplicate_in_Strin {
+public class Remove_Duplicate_in_String {
     public static void main(String[] args) {
         String a= "good";
 

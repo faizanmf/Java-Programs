@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayReversal {
     public static void main(String[] args) {
-        int[] n = {9,8,7,6,5,4,3,2,1};
+        int[] n = {2,5,8,7,4,1,3,6,9};
 
         int start =0;
         int end = n.length-1;

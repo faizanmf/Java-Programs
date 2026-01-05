@@ -3,22 +3,17 @@ package String;
 public class Permutation {
     public static void main(String[] args) {
 
-        String s= "ABC";
-        permute("", s);
+        String s = "ABC";
 
-    }
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = 0; j < s.length(); j++) {
+                for (int k = 0; k < s.length(); k++) {
 
-
-    public static void permute(String a, String s)
-    {
-        if(s.isEmpty()) {
-            System.out.println(a);
-            return;
-        }
-
-        for(int i=0; i<s.length();i++)
-        {
-            permute(a+s.charAt(i), s.substring(0,i)+s.substring(i+1));
+                    if (i != j && j != k && i != k) {
+                        System.out.println("" + s.charAt(i) + s.charAt(j) + s.charAt(k));
+                    }
+                }
+            }
         }
     }
 }

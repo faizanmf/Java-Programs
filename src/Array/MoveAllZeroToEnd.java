@@ -1,26 +1,26 @@
 package Array;
 
-import java.util.Arrays;
-
 public class MoveAllZeroToEnd {
     public static void main(String[] args) {
 
-        int[] n ={0,1,0,2,0,3,0,4,0,5};
+        int[] n = {0, 1, 0, 2, 0, 3, 0, 4, 0, 5};
+        int[] arr = {0, 1, 0, 3, 12, 0, 5};
 
-        int nz=0;
-
-        for(int i : n)
+        int j=0;
+        for(int i=0;i< arr.length;i++)
         {
-            if(i!=0)
+            if(arr[i]!=0)
             {
-                n[nz++] = i;
+                int temp = arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+                j++;
             }
+
+        }
+        for(int num : arr) {
+            System.out.print(num + " ");
         }
 
-        while(nz < n.length)
-        {
-            n[nz++] = 0;
-        }
-        System.out.println(Arrays.toString(n));
     }
 }
